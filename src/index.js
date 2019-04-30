@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/', (req,res) => {
-  res.send("EXPRESS MONGOOSE BERJALAN DI HEROKU")
+  res.send(`<h1>EXPRESS MONGOOSE BERJALAN DI HEROKU DI PORT ${port}</h1>`)
 })
 
 app.post("/users", async (req, res) => {
