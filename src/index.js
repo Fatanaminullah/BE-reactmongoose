@@ -11,6 +11,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get('/', (req,res) => {
+  res.send("EXPRESS MONGOOSE BERJALAN DI HEROKU")
+})
+
 app.post("/users", async (req, res) => {
   const user = new User(req.body);
 
