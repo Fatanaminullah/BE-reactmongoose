@@ -1,5 +1,5 @@
 const express = require("express");
-const port = require("./config/index");
+const port = require("./config");
 const cors = require("cors");
 const User = require("./model/user");
 const Task = require("./model/task");
